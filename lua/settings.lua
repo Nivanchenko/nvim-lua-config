@@ -14,9 +14,6 @@ set diffopt=vertical
 
 set path+=**
 
-" Display all matching files when we tab complete
-set wildmenu
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Text, tab and indent related
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

@@ -22,7 +22,7 @@ require('p_delimitmate')
 require('p_telescope')
 require('p_easyalign')
 require('p_easymotion')
-require('p_vimspector')
+-- require('p_vimspector')
 require('p_vimwiki')
 
 require('p_bsl')

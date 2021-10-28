@@ -44,11 +44,10 @@ local cmp = require "cmp"
    },
  
    sources = {
-     -- Youtube: Could enable this only for lua, but nvim_lua handles that already.
      { name = "nvim_lsp" },
      { name = "path" },
      { name = "ultisnips" },
-     { name = "buffer", keyword_length = 2, keyword_pattern = "\\k\\+"},
+     { name = "buffer", keyword_length = 3, opts = { keyword_pattern = [[\%(-\?\d\+\%(\.\d\+\)\?\|\h\w*\%([\-.]\w*\)*\|[а-яА-ЯеёЕЁ]*\)]]}},
    }, 
  
    experimental = {

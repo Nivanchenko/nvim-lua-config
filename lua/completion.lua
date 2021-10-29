@@ -1,6 +1,7 @@
 local packer = require('packer')
-packer.use({ 'SirVer/ultisnips' })
-packer.use({ 'quangnguyen30192/cmp-nvim-ultisnips' })
+packer.use({ 'hrsh7th/cmp-vsnip' })
+packer.use({ 'hrsh7th/vim-vsnip' })
+packer.use({ 'keyring/vsc-lua' })
 
 vim.opt.completeopt = { "menu", "menuone", "noselect" }
 
@@ -26,8 +27,8 @@ local cmp = require "cmp"
 
  cmp.setup {
     snippet = {
-      expand = function(args)
-        vim.fn["UltiSnips#Anon"](args.body) -- For `ultisnips` users.
+        expand = function(args)
+            vim.fn["vsnip#anonymous"](args.body) -- For `vsnip` users.
       end,
     },
    mapping = {
@@ -46,7 +47,7 @@ local cmp = require "cmp"
    sources = {
      { name = "nvim_lsp" },
      { name = "path" },
-     { name = "ultisnips" },
+     { name = "vsnip" },
      { name = "buffer", keyword_length = 3, opts = { keyword_pattern = [[\%(-\?\d\+\%(\.\d\+\)\?\|\h\w*\%([\-.]\w*\)*\|[а-яА-ЯеёЕЁ]*\)]]}},
    }, 
  
@@ -59,3 +60,11 @@ local cmp = require "cmp"
    },
  }
 
+
+vim.cmd([[
+" Jump forward or backward
+imap <expr> <Tab>   vsnip#jumpable(1)   ? '<Plug>(vsnip-jump-next)'      : '<Tab>'
+smap <expr> <Tab>   vsnip#jumpable(1)   ? '<Plug>(vsnip-jump-next)'      : '<Tab>'
+imap <expr> <S-Tab> vsnip#jumpable(-1)  ? '<Plug>(vsnip-jump-prev)'      : '<S-Tab>'
+smap <expr> <S-Tab> vsnip#jumpable(-1)  ? '<Plug>(vsnip-jump-prev)'      : '<S-Tab>'
+]])

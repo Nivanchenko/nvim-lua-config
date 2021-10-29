@@ -1,13 +1,8 @@
 
 local packer = require('packer')
-
-packer.use(
-    { 'Nivanchenko/bsl-lsp.nvim' }
- )
-
-packer.use(
-    { 'andreevlex/vim-language-1c-bsl' }
-)
+packer.use({ 'Nivanchenko/bsl-lsp.nvim' })
+packer.use({ 'andreevlex/vim-language-1c-bsl' })
+packer.use({ '1c-syntax/vsc-language-1c-bsl' })
 
 pcall(function()
     -- Непосредственно подключение к bsl lsp

@@ -27,4 +27,4 @@ require('p_vimwiki')
 
 require('p_bsl')
 
-require('completion')
+--require('completion')

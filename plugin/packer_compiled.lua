@@ -44,8 +44,8 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
-local package_path_str = "/home/nick/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?.lua;/home/nick/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?/init.lua;/home/nick/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?.lua;/home/nick/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?/init.lua"
-local install_cpath_pattern = "/home/nick/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/lua/5.1/?.so"
+local package_path_str = "C:\\Users\\N3213~1.IVA\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.0-beta3\\share\\lua\\5.1\\?.lua;C:\\Users\\N3213~1.IVA\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.0-beta3\\share\\lua\\5.1\\?\\init.lua;C:\\Users\\N3213~1.IVA\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.0-beta3\\lib\\luarocks\\rocks-5.1\\?.lua;C:\\Users\\N3213~1.IVA\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.0-beta3\\lib\\luarocks\\rocks-5.1\\?\\init.lua"
+local install_cpath_pattern = "C:\\Users\\N3213~1.IVA\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.0-beta3\\lib\\lua\\5.1\\?.so"
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -69,82 +69,91 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
-  ["bsl-lsp.nvim"] = {
-    loaded = true,
-    path = "/home/nick/.local/share/nvim/site/pack/packer/start/bsl-lsp.nvim"
-  },
   ["cmp-buffer"] = {
     loaded = true,
-    path = "/home/nick/.local/share/nvim/site/pack/packer/start/cmp-buffer"
+    path = "C:\\Users\\n.ivanchenko\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-buffer",
+    url = "https://github.com/hrsh7th/cmp-buffer"
   },
   ["cmp-cmdline"] = {
     loaded = true,
-    path = "/home/nick/.local/share/nvim/site/pack/packer/start/cmp-cmdline"
+    path = "C:\\Users\\n.ivanchenko\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-cmdline",
+    url = "https://github.com/hrsh7th/cmp-cmdline"
   },
   ["cmp-nvim-lsp"] = {
     loaded = true,
-    path = "/home/nick/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp"
-  },
-  ["cmp-nvim-ultisnips"] = {
-    loaded = true,
-    path = "/home/nick/.local/share/nvim/site/pack/packer/start/cmp-nvim-ultisnips"
+    path = "C:\\Users\\n.ivanchenko\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-nvim-lsp",
+    url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
   ["cmp-path"] = {
     loaded = true,
-    path = "/home/nick/.local/share/nvim/site/pack/packer/start/cmp-path"
+    path = "C:\\Users\\n.ivanchenko\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-path",
+    url = "https://github.com/hrsh7th/cmp-path"
   },
   ["delimitMate.vim"] = {
     loaded = true,
-    path = "/home/nick/.local/share/nvim/site/pack/packer/start/delimitMate.vim"
+    path = "C:\\Users\\n.ivanchenko\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\delimitMate.vim",
+    url = "https://github.com/vim-scripts/delimitMate.vim"
   },
   gruvbox = {
     loaded = true,
-    path = "/home/nick/.local/share/nvim/site/pack/packer/start/gruvbox"
+    path = "C:\\Users\\n.ivanchenko\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\gruvbox",
+    url = "https://github.com/morhetz/gruvbox"
   },
   ["lightline.vim"] = {
     loaded = true,
-    path = "/home/nick/.local/share/nvim/site/pack/packer/start/lightline.vim"
+    path = "C:\\Users\\n.ivanchenko\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lightline.vim",
+    url = "https://github.com/itchyny/lightline.vim"
   },
   ["nvim-cmp"] = {
     loaded = true,
-    path = "/home/nick/.local/share/nvim/site/pack/packer/start/nvim-cmp"
+    path = "C:\\Users\\n.ivanchenko\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-cmp",
+    url = "https://github.com/hrsh7th/nvim-cmp"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
-    path = "/home/nick/.local/share/nvim/site/pack/packer/start/nvim-lspconfig"
+    path = "C:\\Users\\n.ivanchenko\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-lspconfig",
+    url = "https://github.com/neovim/nvim-lspconfig"
   },
   ["packer.nvim"] = {
     loaded = false,
     needs_bufread = false,
-    path = "/home/nick/.local/share/nvim/site/pack/packer/opt/packer.nvim"
+    path = "C:\\Users\\n.ivanchenko\\AppData\\Local\\nvim-data\\site\\pack\\packer\\opt\\packer.nvim",
+    url = "https://github.com/wbthomason/packer.nvim"
   },
   ["plenary.nvim"] = {
     loaded = true,
-    path = "/home/nick/.local/share/nvim/site/pack/packer/start/plenary.nvim"
+    path = "C:\\Users\\n.ivanchenko\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\plenary.nvim",
+    url = "https://github.com/nvim-lua/plenary.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,
-    path = "/home/nick/.local/share/nvim/site/pack/packer/start/telescope.nvim"
-  },
-  ultisnips = {
-    loaded = true,
-    path = "/home/nick/.local/share/nvim/site/pack/packer/start/ultisnips"
+    path = "C:\\Users\\n.ivanchenko\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\telescope.nvim",
+    url = "https://github.com/nvim-telescope/telescope.nvim"
   },
   ["vim-easy-align"] = {
     loaded = true,
-    path = "/home/nick/.local/share/nvim/site/pack/packer/start/vim-easy-align"
+    path = "C:\\Users\\n.ivanchenko\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-easy-align",
+    url = "https://github.com/junegunn/vim-easy-align"
   },
   ["vim-easymotion"] = {
     loaded = true,
-    path = "/home/nick/.local/share/nvim/site/pack/packer/start/vim-easymotion"
+    path = "C:\\Users\\n.ivanchenko\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-easymotion",
+    url = "https://github.com/easymotion/vim-easymotion"
   },
   ["vim-language-1c-bsl"] = {
     loaded = true,
-    path = "/home/nick/.local/share/nvim/site/pack/packer/start/vim-language-1c-bsl"
+    path = "C:\\Users\\n.ivanchenko\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-language-1c-bsl",
+    url = "https://github.com/andreevlex/vim-language-1c-bsl"
   },
   vimwiki = {
     loaded = true,
-    path = "/home/nick/.local/share/nvim/site/pack/packer/start/vimwiki"
+    path = "C:\\Users\\n.ivanchenko\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vimwiki",
+    url = "https://github.com/vimwiki/vimwiki"
+  },
+  ["vsc-language-1c-bsl"] = {
+    loaded = true,
+    path = "C:\\Users\\n.ivanchenko\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vsc-language-1c-bsl",
+    url = "https://github.com/1c-syntax/vsc-language-1c-bsl"
   }
 }
 

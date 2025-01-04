@@ -59,6 +59,30 @@ return {
           }
         }
 
+        dap.adapters.onec = {
+          id = 'onec';
+          type = 'executable';
+          command = 'dotnet'; 
+          args = {"/home/nick/.vscode/extensions/akpaevj.onec-debug-0.2.1/bin/OnecDebugAdapter.dll"};
+          name = 'onec';
+        }
+
+        dap.configurations.onec = {
+          {
+            type = 'onec';
+            request = 'launch';
+            name = "Отладка 1С (запуск)";
+            platformPath = "/opt/1cv8/x86_64";
+            rootProject = "${workspaceFolder}/src";
+            debugServerHost = "localhost";
+            infoBase = "empty";
+--            autoAttachTypes = {
+--                "ManagedClient",
+--                "Server"
+--            }
+          }
+        }
+
     end,
   },
 

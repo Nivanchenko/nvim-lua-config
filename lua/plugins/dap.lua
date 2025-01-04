@@ -62,9 +62,9 @@ return {
         dap.adapters.onec = {
           id = 'onec';
           type = 'executable';
+          name = 'onec';
           command = 'dotnet'; 
           args = {"/home/nick/.vscode/extensions/akpaevj.onec-debug-0.2.1/bin/OnecDebugAdapter.dll"};
-          name = 'onec';
         }
 
         dap.configurations.onec = {
@@ -76,10 +76,6 @@ return {
             rootProject = "${workspaceFolder}/src";
             debugServerHost = "localhost";
             infoBase = "empty";
---            autoAttachTypes = {
---                "ManagedClient",
---                "Server"
---            }
           }
         }
 

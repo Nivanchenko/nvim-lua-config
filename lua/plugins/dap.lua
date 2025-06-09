@@ -10,9 +10,7 @@ return {
   {"rcarriga/nvim-dap-ui", 
   -- config = function() require("dapui").setup() end,
   },
-
-  {"mfussenegger/nvim-dap",
-    config = function()
+{"mfussenegger/nvim-dap", config = function()
 
         local dap, dapui = require("dap"), require("dapui")
         dapui.setup()
@@ -40,9 +38,17 @@ return {
           id = 'oscript';
           type = 'executable';
           command = 'mono'; 
-          args = {"/home/nick/.vscode/extensions/evilbeaver.oscript-debug-0.9.1/bin/VSCode.DebugAdapter.exe"};
+          args = {"/Users/nikita.ivanchenko/.vscode/extensions/evilbeaver.oscript-debug-0.9.1/bin/VSCode.DebugAdapter.exe"};
           name = 'bsl';
         }
+
+--        dap.adapters.oscript = {
+--          id = 'oscript';
+--          type = 'executable';
+--          command = 'mono'; 
+--          args = {"/Users/nikita.ivanchenko/.vscode/extensions/evilbeaver.oscript-debug-0.9.1/bin/VSCode.DebugAdapter.exe"};
+--          name = 'bsl';
+--        }
 
         dap.configurations.bsl = {
           {
@@ -53,7 +59,7 @@ return {
             cwd = '${workspaceFolder}';
             args = {};
             -- env = {};
-            runtimeExecutable = "/home/nick/.local/share/ovm/current/bin/oscript";
+            runtimeExecutable = "/Users/nikita.ivanchenko/.local/share/ovm/current/bin/oscript";
             runtimeArgs = {};
             debugPort = 2801;
           }
